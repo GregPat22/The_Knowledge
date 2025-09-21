@@ -8,7 +8,7 @@ html, body {
   color: deepskyblue;
 }
 
-/* define the layer of utiliry */ 
+/* define the layer of utility */ 
 @layer utilities {
   @keyframes loading {
     0% {
