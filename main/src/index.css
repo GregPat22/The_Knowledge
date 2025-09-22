@@ -8,8 +8,26 @@ html, body {
   color: deepskyblue;
 }
 
-/* define the layer of utility */ 
+/* define the layer of utility for the animation "loading"*/ 
 @layer utilities {
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+
+}
+
+.animate-blink {
+  animation: blink 0.8s step-end infinite;
+}
+
+
+
+
   @keyframes loading {
     0% {
      transform: translateX(-100%);
@@ -21,6 +39,6 @@ html, body {
   }
 
     .animate-loading-bar {
-      animation: loading 0.8s, ease-in-out;
+      animation: loading 0.8s ease infinite;
     }
-  }
+}
