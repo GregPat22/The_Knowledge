@@ -1,16 +1,15 @@
-import { useEffect } from "react";
-
-{
-  /* Responsive Menu animation and style for mobile version of the website */
-}
-
+import { useEffect } from 'react';
+/* Responsive Menu animation and style for mobile version of the website */
 export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
+  useEffect(() => {
+    document.body.style.overflow = menuOpen ? 'hidden' : '';
+  });
   return (
     <div
       className={`fixed top-0 w-full bg-[rgba(10, 10, 10, 0.8)] z-40 flex flex-col items-center justify-center transition-all duration-300 ease-in-out ${
         menuOpen
-          ? "h-scree opacity-100 pointer-events-auto"
-          : "h-0 opacity-0 pointer-events-none"
+          ? 'h-screen opacity-100 bg-black pointer-events-auto'
+          : 'h-0 opacity-0 pointer-events-none'
       }`}
     >
       <button
@@ -20,29 +19,29 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
       >
         &times;
       </button>
-
-      <a>
-        <a
-          href="#home"
-          className="text-gray-300 hover:text-white transition-colors"
-        >
-          {" "}
-          Home{" "}
-        </a>
-        <a
-          href="#build"
-          className="text-gray-300 hover:text-white transition-colors"
-        >
-          {" "}
-          Build{" "}
-        </a>
-        <a
-          href="#thoughts"
-          className="text-gray-300 hover:text-white transition-colors"
-        >
-          {" "}
-          Thoughts{" "}
-        </a>
+      <a
+        href="#home"
+        className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300${
+          menuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
+        }`}
+      >
+        Home
+      </a>
+      <a
+        href="#build"
+        className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300${
+          menuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
+        }`}
+      >
+        Build
+      </a>
+      <a
+        href="#thoughts"
+        className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300${
+          menuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
+        }`}
+      >
+        Thoughts
       </a>
     </div>
   );

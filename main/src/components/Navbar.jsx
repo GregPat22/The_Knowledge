@@ -1,15 +1,14 @@
-import { useEffect } from "react";
+import { useEffect } from 'react';
 
-export const Navbar = ({ menuOpen }) => {
+export const Navbar = ({ menuOpen, setMenuOpen }) => {
   useEffect(() => {
-    document.body.style.overflow = menuOpen ? "hidden" : "";
+    document.body.style.overflow = menuOpen ? 'hidden' : '';
   });
   return (
     <nav className="fixed top-0 w-full z-40 bg-[rgba(10, 10, 10, 0.8)] backdrop-blur-lg border-b border-white/10 shadow-lg">
       <div className="max-w-5xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <a href="#home" className="font-mono text-xl font-bold text-white">
-            {" "}
             <span className="text-white">The Knowledge</span>
           </a>
           {/* mobile menu */}
@@ -25,22 +24,19 @@ export const Navbar = ({ menuOpen }) => {
               href="#home"
               className="text-gray-300 hover:text-white transition-colors"
             >
-              {" "}
-              Home{" "}
+              Home
             </a>
             <a
               href="#build"
               className="text-gray-300 hover:text-white transition-colors"
             >
-              {" "}
-              Build{" "}
+              Build
             </a>
             <a
               href="#thoughts"
               className="text-gray-300 hover:text-white transition-colors"
             >
-              {" "}
-              Thoughts{" "}
+              Thoughts
             </a>
           </div>
         </div>

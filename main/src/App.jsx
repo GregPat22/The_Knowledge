@@ -1,9 +1,9 @@
-import "./App.css";
-import "./index.css";
-import { LoadingScreen } from "./components/LoadingScreen";
-import { useState } from "react";
-import { Navbar } from "./components/Navbar";
-import { MobileMenu } from "./components/MobileMenu";
+import './App.css';
+import './index.css';
+import { LoadingScreen } from './components/LoadingScreen';
+import { useState } from 'react';
+import { Navbar } from './components/Navbar';
+import { MobileMenu } from './components/MobileMenu';
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -11,13 +11,14 @@ function App() {
 
   return (
     <>
-      {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}{" "}
+      {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}{' '}
       <div
         className={`min-h-screen transition-opacity duration-700 ${
-          isLoaded ? "opacity-100" : "opacity-0"
+          isLoaded ? 'opacity-100' : 'opacity-0'
         } bg-black text text-gray-100`}
       >
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}></Navbar>
+        <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen}></MobileMenu>
       </div>
     </>
   );
