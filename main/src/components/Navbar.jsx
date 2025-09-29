@@ -8,8 +8,11 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
     <nav className="fixed top-0 w-full z-40 bg-[rgba(10, 10, 10, 0.8)] backdrop-blur-lg  shadow-lg">
       <div className="max-w-5xl mx-auto px-4">
         <div className="flex justify-between items-center h-24">
-          <a href="#home" className="text-3xl font-stretch-75% text-white">
-            <span className="text-white">THE KNOWLEDGE.</span>
+          <a
+            href="#home"
+            className="text-3xl font-saira text-white hover:bg-gradient-to-r hover:from-white hover:to-yellow-400 hover:bg-clip-text hover:text-transparent hover:transition-all hover:duration-600"
+          >
+            THE KNOWLEDGE.
           </a>
           {/* mobile menu */}
           <div
@@ -22,19 +25,19 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
           <div className="hidden md:flex items-center space-x-8">
             <a
               href="#home"
-              className="text-gray-300 hover:text-white transition-colors"
+              className="text-gray-300 hover:text-yellow-400 transition-colors"
             >
               Home
             </a>
             <a
               href="#build"
-              className="text-gray-300 hover:text-white transition-colors"
+              className="text-gray-300 hover:text-yellow-400 transition-colors"
             >
               Build
             </a>
             <a
               href="#thoughts"
-              className="text-gray-300 hover:text-white transition-colors"
+              className="text-gray-300 hover:text-yellow-400 transition-colors"
             >
               Thoughts
             </a>
