@@ -5,11 +5,11 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
     document.body.style.overflow = menuOpen ? 'hidden' : '';
   });
   return (
-    <nav className="fixed top-0 w-full z-40 bg-[rgba(10, 10, 10, 0.8)] backdrop-blur-lg border-b border-white/10 shadow-lg">
+    <nav className="fixed top-0 w-full z-40 bg-[rgba(10, 10, 10, 0.8)] backdrop-blur-lg  shadow-lg">
       <div className="max-w-5xl mx-auto px-4">
-        <div className="flex justify-between items-center h-16">
-          <a href="#home" className="font-mono text-xl font-bold text-white">
-            <span className="text-white">The Knowledge</span>
+        <div className="flex justify-between items-center h-24">
+          <a href="#home" className="text-3xl font-stretch-75% text-white">
+            <span className="text-white">THE KNOWLEDGE.</span>
           </a>
           {/* mobile menu */}
           <div

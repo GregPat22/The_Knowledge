@@ -1,12 +1,11 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 html,
 body {
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Saira', sans-serif;
   background-color: rgb(50, 47, 47);
-  color: deepskyblue;
 }
 
 /* define the layer of utility for the animation "loading"*/
@@ -36,5 +35,9 @@ body {
 
   .animate-loading-bar {
     animation: loading 0.8s ease infinite;
+  }
+
+  .font-saira {
+    font-family: 'Saira', sans-serif;
   }
 }
