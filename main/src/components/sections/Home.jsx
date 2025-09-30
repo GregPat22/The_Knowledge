@@ -5,32 +5,26 @@ export const Home = () => {
       className="min-h-screen flex flex-col items-center justify-center relative bg-black"
     >
       <div className="text-center z-10 px-4 sm:px-6">
-        <h1 className="text-2xl sm:text-3xl font-saira font-bold mb-6 animated-text-gradient leading-tight">
+        <h1 className="text-2xl sm:text-3xl font-jura font-bold mb-6 animated-text-gradient leading-tight">
           Thinking is what differentiates us from the animal kingdom, bringing
           us closer to the Gods' one.
         </h1>
-        <p className="text-base sm:text-lg font-saira mb-6 text-white">
+        <p className="text-base sm:text-lg font-jura mb-6 text-white">
           Awareness is just the path for the future.
         </p>
       </div>
-      <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+      <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-8">
         <a
-          href="#building"
-          className="bg-yellow-400 text-black py-3 px-6 rounded font-saira font-medium transition relative overflow-hidden hover:bg-gradient-to-r hover:from-yellow-400 hover:to-yellow-600 hover:bg-clip-text hover:text-transparent hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(250,204,21,0.4)]"
+          href="#create"
+          className="bg-gray-400 text-black py-3 rounded font-jura font-extrabold text-xl transition relative overflow-hidden hover:-translate-y-0.5 shadow-lg hover:bg-gradient-to-r hover:from-white hover:to-yellow-400 hover:transition-all hover:duration-600 text-center w-48"
         >
-          Building Knowledge
+          Create
         </a>
         <a
-          href="#building"
-          className="bg-yellow-400 text-black py-3 px-6 rounded font-saira font-medium transition relative overflow-hidden hover:bg-gradient-to-r hover:from-yellow-400 hover:to-yellow-600 hover:bg-clip-text hover:text-transparent hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(250,204,21,0.4)]"
+          href="#read"
+          className="bg-gray-400 text-black py-3 rounded font-jura font-extrabold text-xl transition relative overflow-hidden hover:-translate-y-0.5 shadow-lg hover:bg-gradient-to-r hover:from-white hover:to-yellow-400 hover:transition-all hover:duration-600 text-center w-48"
         >
-          Reading Knowledge
-        </a>
-        <a
-          href="#building"
-          className="bg-yellow-400 text-black py-3 px-6 rounded font-saira font-medium transition relative overflow-hidden hover:bg-gradient-to-r hover:from-yellow-400 hover:to-yellow-600 hover:bg-clip-text hover:text-transparent hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(250,204,21,0.4)]"
-        >
-          Managing Knowledge
+          Read
         </a>
       </div>
     </section>

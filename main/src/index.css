@@ -4,7 +4,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Saira', sans-serif;
+  font-family: 'Jura';
   background-color: rgb(50, 47, 47);
 }
 
@@ -37,8 +37,8 @@ body {
     animation: loading 0.8s ease infinite;
   }
 
-  .font-saira {
-    font-family: 'Saira', sans- serif;
+  .font-jura {
+    font-family: 'Jura', sans- serif;
   }
 
   /* Animated gradient for text */

@@ -30,16 +30,16 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
               Home
             </a>
             <a
-              href="#build"
+              href="#create"
               className="text-gray-300 hover:text-yellow-400 transition-colors"
             >
-              Build
+              Create
             </a>
             <a
-              href="#thoughts"
+              href="#read"
               className="text-gray-300 hover:text-yellow-400 transition-colors"
             >
-              Thoughts
+              Read
             </a>
           </div>
         </div>
