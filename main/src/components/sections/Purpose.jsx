@@ -5,14 +5,13 @@ export const Purpose = () => {
   return (
     <section
       id="purpose"
-      className="min-h-screen flex flex-row items-center justify-left ml-36 relative bg-black"
+      className="min-h-screen flex items-center justify-left ml-36 relative bg-black"
     >
-      <div className="items-center justify-center text-xl">
-        <h1 className="text-4xl text-left font-bold text-white mb-10">
-          The purpose
-        </h1>
-
-        <div className="text-white text-center justify-center">
+      <div className="flex flex-row items-center justify-center  text-xl">
+        <div className="text-white text-center justify-center m-12">
+          <h1 className="text-4xl text-left font-bold text-white mb-10">
+            The purpose
+          </h1>
           <p className="text-left mb-2">
             Ancients were usual to gather in large groups to share knowledge and
             ideas.
@@ -25,9 +24,11 @@ export const Purpose = () => {
             but we constantly search for something else then the knowledge
             itself.
           </p>
-          <p className="mt-2 text-left text-amber-400">Find the knowledge.</p>
+          <p className="mt-2 text-left text-amber-400">
+            Connect with people, and find the knowledge.
+          </p>
         </div>
-        <div>
+        <div className="">
           <img
             src={myImage}
             alt="Ancient dialogue"
