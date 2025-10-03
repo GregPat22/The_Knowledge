@@ -15,7 +15,7 @@ export const RevealOnScroll = ({ children }) => {
       {
         root: null,
         rootMargin: '0px',
-        threshold: 0.8,
+        threshold: 1,
       }
     );
 

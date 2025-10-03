@@ -6,10 +6,10 @@ export const Purpose = () => {
   return (
     <section
       id="purpose"
-      className="min-h-screen flex items-center justify-left ml-36 relative bg-black"
+      className="min-h-screen flex items-center justify-center m-36 relative bg-black"
     >
       <RevealOnScroll>
-        <div className="flex flex-row items-center justify-center  text-xl">
+        <div className="flex flex-col lg:flex-row items-center justify-center text-xl">
           <div className="text-white text-center justify-center m-12">
             <h1 className="text-4xl text-left font-bold text-white mb-10">
               The purpose
@@ -30,11 +30,11 @@ export const Purpose = () => {
               Connect with people, and find the knowledge.
             </p>
           </div>
-          <div className="">
+          <div className="lg:shrink-0 min-w-80 w-full max-w-md">
             <img
               src={myImage}
               alt="Ancient dialogue"
-              className="w-full max-w-md mt-8 rounded-sm shadow-xl shadow-amber-200"
+              className="w-full h-auto min-w-80 mt-8 rounded-sm shadow-xl shadow-amber-200"
             />
           </div>
         </div>
