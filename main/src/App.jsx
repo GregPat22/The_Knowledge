@@ -11,11 +11,27 @@ import { Footer } from './components/Footer';
 import { Create } from './components/sections/Create';
 import { Read } from './components/sections/Read';
 
+import { createBrowserRouter } from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom';
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      element: <Home />,
+    },
+    {
+      path: '/create',
+      element: <Create />,
+    },
+    {
+      path: '/read',
+      element: <Read />,
+    },
+  ]);
 
   return (
     <>
@@ -34,7 +50,6 @@ function App() {
           <Route path="/read" element={<Read />} />
         </Routes>
 
-        <Purpose />
         <Footer />
       </div>
     </>
