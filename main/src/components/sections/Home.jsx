@@ -18,13 +18,13 @@ export const Home = () => {
         </div>
         <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-8">
           <a
-            href="#create"
+            href="/create"
             className="bg-gray-400 text-black py-3 rounded font-jura font-extrabold text-xl transition relative overflow-hidden hover:-translate-y-0.5 shadow-lg hover:bg-gradient-to-r hover:from-white hover:to-yellow-400 hover:transition-all hover:duration-600 text-center w-48"
           >
             Create
           </a>
           <a
-            href="#read"
+            href="/read"
             className="bg-gray-400 text-black py-3 rounded font-jura font-extrabold text-xl transition relative overflow-hidden hover:-translate-y-0.5 shadow-lg hover:bg-gradient-to-r hover:from-white hover:to-yellow-400 hover:transition-all hover:duration-600 text-center w-48"
           >
             Read
