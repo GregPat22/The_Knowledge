@@ -41,9 +41,9 @@ function App() {
           isLoaded ? 'opacity-100' : 'opacity-0'
         } bg-black text text-gray-100`}
       >
-        <Navbar 
-          menuOpen={menuOpen} 
-          setMenuOpen={setMenuOpen} 
+        <Navbar
+          menuOpen={menuOpen}
+          setMenuOpen={setMenuOpen}
           currentPath={location.pathname}
         />
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />

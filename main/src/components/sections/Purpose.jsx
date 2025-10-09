@@ -6,7 +6,7 @@ export const Purpose = () => {
   return (
     <section
       id="purpose"
-      className="min-h-screen flex items-center justify-center m-36 relative bg-black"
+      className="min-h-screen flex items-center justify-center  relative bg-black"
     >
       <RevealOnScroll>
         <div className="flex flex-col lg:flex-row items-center justify-center text-xl">
