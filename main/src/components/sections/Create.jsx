@@ -13,7 +13,7 @@ import lightbulbIcon from '../../assets/lightbulbIcon.png';
 
 export const Create = () => {
   return (
-    <section className="flex flex-col items-center justify-center py-4 px-2 sm:px-4 min-h-screen overflow-hidden">
+    <section className="flex flex-col items-center justify-center pt-28 pb-4 px-2 sm:px-4 min-h-screen overflow-hidden">
       {/* Entire Creation Section */}
       <div className="flex flex-col 2xl:flex-row gap-4 sm:gap-6 lg:gap-8 w-full max-w-6xl items-center">
         {/* Knowledge Creation Section - Left Side */}
@@ -26,23 +26,23 @@ export const Create = () => {
           </h1>
 
           {/* Single bordered container for both title and description */}
-          <div className="border-gray-600 border-2 rounded-md p-3 sm:p-4 md:p-6 w-full max-w-2xl">
+          <div className="border-gray-600 border-[0.5px] rounded-md p-12 sm:p-10 md:p-12 w-full max-w-6xl mr-auto">
             {/* insert a form here */}
-            <form className="flex flex-col gap-3 sm:gap-4 md:gap-6 w-full">
+            <form className="flex flex-col gap-8 sm:gap-8 md:gap-8 w-full">
               {/* Title Section */}
               <Field.Root required>
                 <Field.Label className="text-white text-xs sm:text-sm md:text-base">
                   Title <Field.RequiredIndicator />
                 </Field.Label>
                 <Textarea
-                  placeholder="Start typing..."
+                  placeholder="Insert title here..."
                   variant="subtle"
                   width="100%"
                   minHeight="50px"
-                  maxHeight="100px"
+                  maxHeight="50px"
                   resize="vertical"
                   overflow="hidden"
-                  className="text-xs sm:text-sm md:text-base"
+                  className="text-xs sm:text-sm md:text-base bg-black border-[0.5px] border-stone-600"
                 />
                 <Field.HelperText className="text-gray-300 text-xs">
                   Max 50 characters.
@@ -55,14 +55,14 @@ export const Create = () => {
                   Description <Field.RequiredIndicator />
                 </Field.Label>
                 <Textarea
-                  placeholder="Start typing..."
+                  placeholder="Insert description here..."
                   variant="outline"
                   width="100%"
-                  minHeight="100px"
-                  maxHeight="250px"
+                  minHeight="300px"
+                  maxHeight="300px"
                   resize="vertical"
                   overflow="hidden"
-                  className="text-xs sm:text-sm md:text-base"
+                  className="text-xs sm:text-sm md:text-base bg-black border-[0.5px] border-stone-600"
                 />
                 <Field.HelperText className="text-gray-300 text-xs">
                   Max 4000 characters.
