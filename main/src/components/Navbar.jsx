@@ -1,4 +1,6 @@
 import { useEffect } from 'react';
+import { Avatar } from '@chakra-ui/react';
+import bwayneprofile from '../assets/bwayneprofile.jpg';
 
 export const Navbar = ({ menuOpen, setMenuOpen }) => {
   useEffect(() => {
@@ -22,7 +24,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
             &#9776;
           </div>
           {/* desktop menu */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-14">
             <a
               href="/"
               className="text-gray-300 hover:text-yellow-400 transition-colors"
@@ -41,6 +43,16 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
             >
               Read
             </a>
+            <Avatar.Root>
+              <Avatar.Fallback
+                name="Knowledge's Avatar"
+                className="w-full h-full rounded-full"
+              />
+              <Avatar.Image
+                src={bwayneprofile}
+                className="w-full h-full rounded-full"
+              />
+            </Avatar.Root>
           </div>
         </div>
       </div>

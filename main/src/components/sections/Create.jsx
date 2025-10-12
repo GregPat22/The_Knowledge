@@ -26,7 +26,7 @@ export const Create = () => {
           </h1>
 
           {/* Single bordered container for both title and description */}
-          <div className="border-gray-600 border-[0.5px] rounded-md p-12 sm:p-10 md:p-12 w-full max-w-6xl mr-auto">
+          <div className="p-12 sm:p-10 md:p-12 w-full max-w-6xl mr-auto">
             {/* insert a form here */}
             <form className="flex flex-col gap-8 sm:gap-8 md:gap-8 w-full">
               {/* Title Section */}
@@ -73,7 +73,7 @@ export const Create = () => {
         </div>
 
         {/* Metadata Section - Right Side with Left Border */}
-        <div className="flex flex-col items-center border-l border-gray-600 pl-3 sm:pl-4 md:pl-6 lg:pl-8 min-w-56 sm:min-w-64 md:min-w-72 lg:min-w-80 w-full 2xl:w-auto 2xl:flex-1 max-w-xs mt-3 sm:mt-4 md:mt-0">
+        <div className="flex flex-col items-center border-l border-gray-600 pl-3 sm:pl-4 md:pl-6 lg:pl-8 min-w-56 sm:min-w-64 md:min-w-72 lg:min-w-80 w-full 2xl:w-auto 2xl:self-stretch max-w-xs mt-3 sm:mt-4 md:mt-0">
           <h1 className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-2 sm:mb-3 md:mb-4 text-center">
             Metadata
           </h1>
