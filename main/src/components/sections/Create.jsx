@@ -1,4 +1,5 @@
 import React from 'react';
+import { Sidebar } from '../Sidebar';
 import {
   Button,
   HStack,
@@ -14,6 +15,7 @@ import lightbulbIcon from '../../assets/lightbulbIcon.png';
 export const Create = () => {
   return (
     <section className="flex flex-col items-center justify-center pt-28 pb-4 px-2 sm:px-4 min-h-screen overflow-hidden">
+      <Sidebar />
       {/* Entire Creation Section */}
       <div className="flex flex-col 2xl:flex-row gap-4 sm:gap-6 lg:gap-8 w-full max-w-6xl items-center">
         {/* Knowledge Creation Section - Left Side */}
@@ -73,26 +75,26 @@ export const Create = () => {
         </div>
 
         {/* Metadata Section - Right Side with Left Border */}
-        <div className="flex flex-col items-center border-l border-gray-600 pl-3 sm:pl-4 md:pl-6 lg:pl-8 min-w-56 sm:min-w-64 md:min-w-72 lg:min-w-80 w-full 2xl:w-auto 2xl:self-stretch max-w-xs mt-3 sm:mt-4 md:mt-0">
+        <div className="flex flex-col items-center border-l border-gray-600 pl-3 sm:pl-12 md:pl-12 lg:pl-12 min-w-56 sm:min-w-64 md:min-w-72 lg:min-w-80 w-full 2xl:w-auto 2xl:self-stretch max-w-xs mt-3 sm:mt-4 md:mt-0">
           <h1 className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-2 sm:mb-3 md:mb-4 text-center">
             Metadata
           </h1>
-          <div className="text-gray-300 space-y-1 sm:space-y-2 w-full">
+          <div className="text-gray-300 space-y-32 sm:space-y-32 w-full">
             {/* Add your metadata content here */}
-            <div className="flex flex-col gap-1 sm:gap-2 text-xs sm:text-sm md:text-base">
-              <div className="flex justify-between">
+            <div className="flex flex-col gap-2 sm:gap-2 text-xs sm:text-sm md:text-base">
+              <div className="flex justify-between m-4">
                 <span className="text-gray-400">Category:</span>
                 <span className="text-white">Philosophy</span>
               </div>
-              <div className="flex justify-between">
+              <div className="flex justify-between m-4">
                 <span className="text-gray-400">Author:</span>
                 <span className="text-white">Anonymous</span>
               </div>
-              <div className="flex justify-between">
+              <div className="flex justify-between m-4">
                 <span className="text-gray-400">Created:</span>
                 <span className="text-white">Oct 9, 2025</span>
               </div>
-              <div className="flex justify-between">
+              <div className="flex justify-between m-4">
                 <span className="text-gray-400">Status:</span>
                 <span className="text-green-400">Draft</span>
               </div>
