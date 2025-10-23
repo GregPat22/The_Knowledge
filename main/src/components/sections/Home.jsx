@@ -1,4 +1,5 @@
 import { Purpose } from './Purpose';
+import { Pricing } from './Pricing';
 
 export const Home = () => {
   return (
@@ -32,6 +33,7 @@ export const Home = () => {
         </div>
       </section>
       <Purpose />
+      <Pricing />
     </>
   );
 };
