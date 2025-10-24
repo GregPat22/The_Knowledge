@@ -8,31 +8,26 @@ const classNames = (...classes) => {
 // Pricing tiers data
 const tiers = [
   {
-    id: 'starter',
-    name: 'Starter',
-    priceMonthly: '$9',
-    description: 'Perfect for getting started with our platform.',
-    features: [
-      'Up to 5 projects',
-      'Basic analytics',
-      'Email support',
-      'Mobile app access',
-    ],
+    id: 'disciple',
+    name: 'Disciple',
+    priceMonthly: '$0.99',
+    description: 'Start your journey of knowledge today.',
+    features: ['Create Knowledge', 'Reading Knowledge'],
     href: '#',
     featured: false,
   },
   {
-    id: 'pro',
-    name: 'Pro',
-    priceMonthly: '$29',
-    description: 'Best for growing teams and businesses.',
+    id: 'orator',
+    name: 'Orator',
+    priceMonthly: '$299.99',
+    description: 'Become a master of knowledge.',
     features: [
-      'Unlimited projects',
-      'Advanced analytics',
-      'Priority support',
-      'Team collaboration',
-      'API access',
-      'Custom integrations',
+      'Access to all Disciple plan features',
+      'Socrates AI Integration',
+      'Notion Integration',
+      'Slack Integration',
+      'Google Drive Integration',
+      'Dropbox Integration',
     ],
     href: '#',
     featured: true,
@@ -57,82 +52,91 @@ export const Pricing = () => {
             <div
               key={tier.id}
               className={classNames(
-                'liquid-glass',
+                tier.featured ? 'animated-gradient-border' : 'liquid-glass',
                 tier.featured
                   ? 'rounded-xl'
                   : tierIdx === 0
-                  ? 'rounded-t-3xl sm:rounded-b-none lg:rounded-tr-none lg:rounded-bl-3xl'
-                  : 'sm:rounded-t-none lg:rounded-tr-3xl lg:rounded-bl-none',
-                'p-8 ring-1 ring-white/10 sm:p-10'
+                  ? 'rounded-t-3xl sm:rounded-b-3xl lg:rounded-tr-none lg:rounded-bl-3xl lg:rounded-br-none'
+                  : 'sm:rounded-t-none lg:rounded-tr-3xl lg:rounded-bl-3xl lg:rounded-br-3xl',
+                tier.featured
+                  ? 'p-8 sm:p-10'
+                  : 'p-8 ring-1 ring-white/10 sm:p-10'
               )}
             >
-              <h3
-                id={tier.id}
+              <div
                 className={classNames(
-                  tier.featured ? 'text-yellow-400' : 'text-yellow-400',
-                  'text-base/7 font-semibold'
+                  tier.featured ? 'card-content' : '',
+                  tier.featured ? 'p-8 sm:p-10' : ''
                 )}
               >
-                {tier.name}
-              </h3>
-              <p className="mt-4 flex items-baseline gap-x-2">
-                <span
+                <h3
+                  id={tier.id}
                   className={classNames(
-                    tier.featured ? 'text-white' : 'text-white',
-                    'text-5xl font-semibold tracking-tight'
+                    tier.featured ? 'text-yellow-400' : 'text-yellow-400',
+                    'text-base/7 font-semibold'
                   )}
                 >
-                  {tier.priceMonthly}
-                </span>
-                <span
+                  {tier.name}
+                </h3>
+                <p className="mt-4 flex items-baseline gap-x-2">
+                  <span
+                    className={classNames(
+                      tier.featured ? 'text-white' : 'text-white',
+                      'text-5xl font-semibold tracking-tight'
+                    )}
+                  >
+                    {tier.priceMonthly}
+                  </span>
+                  <span
+                    className={classNames(
+                      tier.featured ? 'text-gray-400' : 'text-gray-400',
+                      'text-base'
+                    )}
+                  >
+                    /month
+                  </span>
+                </p>
+                <p
                   className={classNames(
-                    tier.featured ? 'text-gray-400' : 'text-gray-400',
-                    'text-base'
+                    tier.featured ? 'text-gray-300' : 'text-gray-300',
+                    'mt-6 text-base/7'
                   )}
                 >
-                  /month
-                </span>
-              </p>
-              <p
-                className={classNames(
-                  tier.featured ? 'text-gray-300' : 'text-gray-300',
-                  'mt-6 text-base/7'
-                )}
-              >
-                {tier.description}
-              </p>
-              <ul
-                role="list"
-                className={classNames(
-                  tier.featured ? 'text-gray-300' : 'text-gray-300',
-                  'mt-8 space-y-3 text-sm/6 sm:mt-10'
-                )}
-              >
-                {tier.features.map((feature) => (
-                  <li key={feature} className="flex gap-x-3">
-                    <CheckIcon
-                      aria-hidden="true"
-                      className={classNames(
-                        tier.featured ? 'text-yellow-400' : 'text-yellow-400',
-                        'h-6 w-5 flex-none'
-                      )}
-                    />
-                    {feature}
-                  </li>
-                ))}
-              </ul>
-              <a
-                href={tier.href}
-                aria-describedby={tier.id}
-                className={classNames(
-                  tier.featured
-                    ? 'bg-yellow-400 text-black hover:bg-yellow-300 focus-visible:outline-yellow-400'
-                    : 'bg-white/10 text-white inset-ring inset-ring-white/5 hover:bg-white/20 focus-visible:outline-white/75',
-                  'mt-8 block rounded-md px-3.5 py-2.5 text-center text-sm font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 sm:mt-10'
-                )}
-              >
-                Get started today
-              </a>
+                  {tier.description}
+                </p>
+                <ul
+                  role="list"
+                  className={classNames(
+                    tier.featured ? 'text-gray-300' : 'text-gray-300',
+                    'mt-8 space-y-3 text-sm/6 sm:mt-10'
+                  )}
+                >
+                  {tier.features.map((feature) => (
+                    <li key={feature} className="flex gap-x-3">
+                      <CheckIcon
+                        aria-hidden="true"
+                        className={classNames(
+                          tier.featured ? 'text-yellow-400' : 'text-yellow-400',
+                          'h-6 w-5 flex-none'
+                        )}
+                      />
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+                <a
+                  href={tier.href}
+                  aria-describedby={tier.id}
+                  className={classNames(
+                    tier.featured
+                      ? 'bg-yellow-400 text-black hover:bg-yellow-300 focus-visible:outline-yellow-400'
+                      : 'bg-white/10 text-white inset-ring inset-ring-white/5 hover:bg-white/20 focus-visible:outline-white/75',
+                    'mt-8 block rounded-md px-3.5 py-2.5 text-center text-sm font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 sm:mt-10'
+                  )}
+                >
+                  Get started today
+                </a>
+              </div>
             </div>
           ))}
         </div>
